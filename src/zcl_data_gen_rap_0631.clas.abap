@@ -31,19 +31,19 @@ CLASS zcl_data_gen_rap_0631 IMPLEMENTATION.
 *      out->write( |customer.... { sy-dbcnt } rows inserted | ).
 *    ENDIF.
 * Update
-
-    DATA lv_date TYPE d.
-
-    lv_date = cl_abap_context_info=>get_system_date( ).
-
-    UPDATE zcustomers_0631 SET flight_date = @lv_date,
-                      price = 200,
-                      currency_code = 'USD',
-                      overall_status = 'O'.
-
-    IF sy-subrc EQ 0.
-      out->write( |Customers inserted: { sy-dbcnt } .| ).
-    ENDIF.
+*
+*    DATA lv_date TYPE d.
+*
+*    lv_date = cl_abap_context_info=>get_system_date( ).
+*
+*    UPDATE zcustomers_0631 SET flight_date = @lv_date,
+*                      price = 200,
+*                      currency_code = 'USD',
+*                      overall_status = 'O'.
+*
+*    IF sy-subrc EQ 0.
+*      out->write( |Customers inserted: { sy-dbcnt } .| ).
+*    ENDIF.
 
 
 
